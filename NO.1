@@ -1,0 +1,17 @@
+# 创建一个类，该类下有一个计算两个数字和的函数
+class FindNumID:
+    def towSum(self,nums,target):
+        length = len(nums)
+        NumsID = [i for i in range(0,length)]
+        for a in NumsID:
+            for b in NumsID:
+                if nums[a] + nums[b] == target:
+                    outnum = [a,b]
+                    return outnum
+
+# 输入变量，分别是一个是列表一个是int值
+nums = [2,7,11,15]
+target = 9
+# 调用类
+obj = FindNumID()
+obj.towSum(nums,target)
